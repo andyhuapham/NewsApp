@@ -1,0 +1,68 @@
+.App {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar button {
+    margin-left: 10px;
+}
+
+.search-input {
+    margin-bottom: 20px;
+}
+
+.search-results li {
+    margin-bottom: 10px;
+}
+
+.search-results a {
+    text-decoration: none;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+.truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.tag-style {
+    display: inline-block;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: #555;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tag-style:hover {
+    background-color: #ddd;
+}
+
+.tag-style:active {
+    background-color: #ccc;
+}

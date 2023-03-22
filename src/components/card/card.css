@@ -1,0 +1,95 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    min-height: 440px;
+    margin-top: 10px;
+}
+
+
+
+.card {
+    background-color: #ccc;
+    padding: 20px;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    border-radius: 10px;
+    min-height: 440px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+    /* height: 300px; */
+}
+
+.card button {
+    align-self: end;
+    justify-self: end;
+    font-size: 12px;
+}
+
+.card h6 {
+    text-align: left;
+}
+
+.card p {
+    font-size: 12px;
+    text-align: left;
+}
+
+.card:nth-child(3n+1) {
+    margin-left: 20px;
+}
+
+.card:nth-child(3n) {
+    margin-right: 20px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+    /* For tablet screens */
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2px;
+    }
+
+    .card:nth-child(3n+1) {
+        margin-left: 0px;
+    }
+
+    .card:nth-child(3n) {
+        margin-right: 0px;
+    }
+
+    .card:nth-child(n) {
+        margin: 10px;
+    }
+
+    .card:nth-child(2n) {
+        margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* For mobile screens */
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .card:nth-child(3n+1) {
+        margin-left: 0px;
+    }
+
+    .card:nth-child(3n) {
+        margin-right: 0px;
+    }
+
+    .card:nth-child(n) {
+        margin: 10px;
+    }
+
+}

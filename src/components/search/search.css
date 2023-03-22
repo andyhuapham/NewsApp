@@ -1,0 +1,21 @@
+.search-container {
+    display: grid;
+    place-items: center;
+
+}
+
+form {
+    display: grid;
+    height: 50px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+#search-input {
+    height: 100%;
+    width: 100%;
+    background-color: #ccc;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 16px;
+}
